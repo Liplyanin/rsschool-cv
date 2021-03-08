@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(0.25turn, #cee9d6, #ebf8e1, #ebe184);
+
+    font-family: 'Poppins';
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    /* background-color: bisque; */
+
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px;
+    
+}
+
+.avatar img{
+    min-width: 100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+.fullName{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fullName h1{
+    font-size: calc(100vw/25);
+
+}
+.fullName h6 {
+    font-size: calc(100vw/55);
+
+}
+
+main{
+    display: flex;
+}
+h5{
+    display: none;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.phone{
+    background-image: url('./src/img/phone.svg');
+}
+.mail{
+    background-image: url('./src/img/mail.svg');
+}
+.location{
+    background-image: url('./src/img/map-marker-alt-solid.svg');
+}
+
+
+.leftSection{
+    min-width: 300px;
+    padding: 0px 20px;
+}
+
+.rightSection {
+    padding: 0px 20px;
+}
+article{
+    background: linear-gradient(#e2e2e2, #c7c9d3);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px grey;
+}
+.rightSection article {
+    margin-bottom: 40px;
+}
+
+ul li{
+    list-style-type: none;
+    font-style: italic;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+}
+h3{
+    text-transform: uppercase;
+    padding: 10px 5px;
+}
+
+.text{
+    padding: 5px;
+    font-style: italic;
+
+}
+
+footer{
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+
+    background: linear-gradient(#e2e2e2, #c7c9d3);
+    margin: 30px 0px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.git{
+    background-image: url('./src/img/github-brands.svg');
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.git a{
+    text-decoration: none;
+    padding-left: 40px;
+    color: black;
+}
+
+@media screen and (max-width: 900px){
+    .wrapper{
+        width: 95%;
+    }
+
+    .avatar img{ 
+        width: 150px;
+        height: 150px;
+    }
+
+    main {
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    article{
+        margin: 10px 0px;
+        padding: 5px;
+        
+    }
+
+    .leftSection, .rightSection{
+        padding: 0;
+
+    }
+    .text{
+        overflow: hidden;
+    }
+}
