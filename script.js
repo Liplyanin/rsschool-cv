@@ -55,6 +55,10 @@ document.addEventListener('click', (e) => {
       document.querySelectorAll('.piano-key').forEach((el) => el.classList.remove('piano-key-letter'));
     }
   }
+
+  if (e.target.classList.contains('fullscreen')) {
+    toggleFullscreen();
+  }
 });
 
 document.addEventListener('keydown', (e) => {
@@ -87,4 +91,14 @@ function playAudio(src) {
   audio.src = src;
   audio.currentTime = 0;
   audio.play();
+}
+
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    document.body.requestFullscreen().catch((err) => {
+      console.log((`Error attempting to enable full-screen mode: ${err.message} (${err.name})`));
+    });
+  } else {
+    document.exitFullscreen();
+  }
 }
