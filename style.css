@@ -276,9 +276,15 @@ footer{
     align-items: center;
     justify-content: space-between;
     width: 240px;
+    list-style-type: none;
+}
+.contactsLogo li{
+    padding: 0;
+    margin: 0;
 }
 .contactsLogo :only-child{
     opacity: 0.6;
+    padding-top: 7px;
 }
 .contactsLogo :only-child:hover{
     cursor: pointer;
