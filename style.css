@@ -177,13 +177,17 @@ body {
 	content: attr(data-letter);
 }
 
-/* .piano-key-remove-mouse:active::before {
+.piano-key-remove-mouse:active::before {
 	color: #a2abb3;
-} */
+}
 
 
 .piano-key-active:hover::after,
 .piano-key-active:hover::before {
+	color: #00b4a4;
+}
+.piano-key-active::after,
+.piano-key-active::before {
 	color: #00b4a4;
 }
 

@@ -1,0 +1,27 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "eslint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liplyanin/rsschool-cv.git"
+  },
+  "author": "maxim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liplyanin/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/Liplyanin/rsschool-cv#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb": "^18.2.1"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
